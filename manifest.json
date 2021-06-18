@@ -1,0 +1,23 @@
+{
+    "manifest_version":2,
+    "name": "Ctrl FindIt",
+    "version": "0.1.0",
+    "description": "Finds the word you enter from the current web page",
+    "icons":{
+        "128" : "icon1.png"
+    },
+    "browser_action" : {
+        "default_icon":"icon1.png"
+    },
+    "content_scripts":[
+        {
+            "matches":["<all_urls>"],
+            "js": ["script.js"],
+            "css": ["styles.css"],
+            "exclude_matches":["https://www.google.com/*"]
+        }
+    ],
+    "background":{
+        "scripts":["vari.js"]
+    }
+}

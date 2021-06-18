@@ -1,0 +1,43 @@
+
+#highlight{
+    animation: myAnimation 800ms;
+    animation-iteration-count: 15;
+}
+
+@keyframes myAnimation{
+    0%{
+        color: black;
+        /* font-size: medium; */
+        font-style: italic, bold;
+    font-size: large;
+    background-color: chartreuse;
+    
+    }
+    30%{
+        color: red;
+        font-style: italic, bold;
+    font-size: large;
+    background-color: chartreuse;
+    }
+    50%{
+        color: green;
+        font-style: italic, bold;
+    font-size: large;
+    background-color: chartreuse;
+
+    }
+    70%{
+        color: red;
+        font-style: italic, bold;
+    font-size: large;
+    background-color: chartreuse;
+
+    }
+    100%{
+        color: black;
+        font-style: italic, bold;
+    font-size: large;
+    background-color: chartreuse;
+
+    }
+}
